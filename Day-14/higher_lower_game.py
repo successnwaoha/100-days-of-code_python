@@ -3,7 +3,7 @@ from game_data import data
 from art import logo, vs
 from os import system
 def format_data(account):
-    """Takes the account data and returns thr printable"""
+    """Takes the account data and returns the printable"""
     account_name = account["name"]
     account_desc = account["description"]
     account_country = account["country"]
