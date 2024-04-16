@@ -1,23 +1,23 @@
-from turtle import Turtle, Screen
-from random import choice
-tim = Turtle()
+import turtle
+import random
 
-tim.shape("turtle")
+tim = turtle.Turtle()
+turtle.colormode(255)
+color = [(194, 149, 131), (37, 17, 14), (140, 82, 58), (28, 106, 160), (237, 214, 85), (7, 22, 50), (220, 84, 64), (197, 137, 158), (120, 170, 195), (154, 62, 90), (158, 15, 33), (201, 81, 106), (161, 165, 30), (11, 53, 25), (126, 183, 156), (43, 127, 79), (78, 11, 20), (15, 94, 56), (137, 223, 208), (14, 177, 214), (10, 56, 140), (20, 201, 178), (156, 16, 11), (223, 172, 191), (235, 172, 160), (124, 220, 232)]
 
-colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+position = 50
 
-def draw_shapes(number_of_sides):
-    angle = 360 / number_of_sides
-    for _ in range(number_of_sides):
-        tim.forward(100)
-        tim.left(angle)
-
-for shape_side_n in range(3, 11):
-    tim.color(choice(colors))
-    draw_shapes(shape_side_n)
-
-
+for _ in range(10):
+    for _ in range(10):
+        tim.color(random.choice(color))
+        tim.dot(20)
+        tim.penup()
+        tim.forward(50)
+    tim.setposition(0, y = position)
+    position += 50
+    
 
 
-screen = Screen()
-screen.exitonclick()
+
+screen = turtle.Screen()
+turtle.exitonclick()
