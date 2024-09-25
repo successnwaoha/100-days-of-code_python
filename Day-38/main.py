@@ -1,15 +1,18 @@
 import requests
 from datetime import datetime
+from dotenv import load_dotenv
 import os
 
-GENDER = "male"
-WEIGHT_KG = "70"
-HEIGHT_CM = "185"
-AGE = "17"
+load_dotenv()
 
-APP_ID = os.environ["APP_ID"]
-API_KEY = os.environ["API_KEY"]
-BEARER_TOKEN = "sdfghjnwe45rt6yuiSDFGHJK456TYU"
+GENDER = os.getenv("GENDER")
+WEIGHT_KG = os.getenv("WEIGHT_KG")
+HEIGHT_CM = os.getenv("HEIGHT_CM")
+AGE = os.getenv("AGE")
+
+APP_ID = os.getenv("APP_ID")
+API_KEY = os.getenv("API_KEY")
+BEARER_TOKEN = os.getenv("BEARER_TOKEN")
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheet_endpoint = "https://api.sheety.co/ad99b3b39230f295fbc8127f314e8ac9/workoutTracking/workouts"

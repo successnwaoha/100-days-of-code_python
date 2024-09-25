@@ -1,4 +1,5 @@
 {
     "code-runner.runInTerminal": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "livePreview.defaultPreviewPath": "/Day-44/6.1 Font Properties/index.html"
 }
