@@ -6,9 +6,9 @@ import os
 
 load_dotenv()
 
-FIRST_NAME = os.getnev("FIRST_NAME")
-LAST_NAME = os.getnev("LAST_NAME")
-EMAIL = os.getnev("EMAIL")
+FIRST_NAME = os.getenv("FIRST_NAME")
+LAST_NAME = os.getenv("LAST_NAME")
+EMAIL = os.getenv("EMAIL")
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("detach", True)
